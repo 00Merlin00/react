@@ -21,5 +21,3 @@ function App() {
     </div>
   );
 }
-
-het;
