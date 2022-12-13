@@ -16,6 +16,7 @@ class App extends React.Component {
         <button
           onClick={() => {
             this.apple();
+            s;
           }}
         >
           Update Data
