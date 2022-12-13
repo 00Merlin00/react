@@ -7,6 +7,7 @@ function App() {
       {" "}
       <h1>Props in React :) </h1>
       <Student name={"Mohit"} />
+      <Student name={"jivan"} />
     </div>
   );
 }
