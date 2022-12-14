@@ -6,8 +6,8 @@ function App() {
     <div className="App">
       {" "}
       <h1>Props in React :) </h1>
-      <Student name={"Mohit"} />
-      <Student name={"jivan"} />
+      <Student name={"Mohit"} email={"mohit@test.com"} />
+      <Student name={"jivan"} email={"jivan@test.com"} />
     </div>
   );
 }
