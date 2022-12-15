@@ -1,13 +1,14 @@
-function Student(props) {
-  return (
-    <div>
-      <h2>Hello {props.name}</h2>
+import React from "react";
 
-      {/* <h4> E-Mail : {props.email}</h4>
-      <h4> State : {props.other.state}</h4>
-      <h4> Pincode : {props.other.pincode}</h4> */}
-    </div>
-  );
+class Student extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello {this.props.name}</h1>
+        <h3>{this.props.email}</h3>
+      </div>
+    );
+  }
 }
 
 export default Student;
