@@ -1,10 +1,11 @@
 function Student(props) {
   return (
     <div>
-      <h1>Hello {props.name}</h1>
-      <h2> E-Mail : {props.email}</h2>
-      <h2> State : {props.other.state}</h2>
-      <h2> Pincode : {props.other.pincode}</h2>
+      <h2>Hello {props.name}</h2>
+
+      {/* <h4> E-Mail : {props.email}</h4>
+      <h4> State : {props.other.state}</h4>
+      <h4> Pincode : {props.other.pincode}</h4> */}
     </div>
   );
 }
