@@ -2,28 +2,16 @@ import "./App.css";
 import Student from "./Student";
 import React, { useState } from "react";
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      name: "Mohit",
-    };
+function App() {
+  function getData() {
+    console.log(val);
   }
-  render() {
-    return (
-      <div className="App">
-        <h1>Props</h1>
-        <Student name={this.state.name} email="mohit@test.com"></Student>
-        <button
-          onClick={() => {
-            this.setState({ name: "Marry" });
-          }}
-        >
-          Update Info
-        </button>
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+      <h1>Get Input box value !</h1>
+      <input type="text" onChange={getData}></input>
+    </div>
+  );
 }
 
 export default App;
