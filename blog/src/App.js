@@ -3,25 +3,9 @@ import "./App.css";
 import React, { useState } from "react";
 
 function App() {
-  let [data, setData] = useState(null);
-  let [print, setPrint] = useState(false);
-
-  function getData(val) {
-    setData(val.target.value);
-    setPrint(false);
-  }
-
   return (
     <div className="App">
-      {print ? <h1>{data}</h1> : null}
-      <input type={"text"} onChange={getData}></input>
-      <button
-        onClick={() => {
-          setPrint(true);
-        }}
-      >
-        click to Update
-      </button>
+      <h1>Hello World!</h1>
     </div>
   );
 }
