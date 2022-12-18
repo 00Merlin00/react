@@ -8,6 +8,7 @@ function App() {
 
   function getData(val) {
     setData(val.target.value);
+    setPrint(false);
   }
 
   return (
