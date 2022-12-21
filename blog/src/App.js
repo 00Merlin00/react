@@ -1,5 +1,6 @@
 import "./App.css";
 import User from "./User";
+import Members from "./Members";
 import React, { useState } from "react";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <h1>Pass Functions as Props</h1>
       <User data={getData} />
+      <Members data={getData} />
     </div>
   );
 }
