@@ -3,18 +3,20 @@ import User from "./User";
 import Members from "./Members";
 import React, { useState } from "react";
 
-function App() {
-  function getData() {
-    alert("Hello from App");
+class App extends React.Component {
+  constructor() {
+    super();
+    console.log("constructor");
   }
-  let [loggedIn, setLoggedIn] = useState(null);
-  return (
-    <div className="App">
-      <h1>Pass Functions as Props</h1>
-      <User data={getData} />
-      <Members data={getData} />
-    </div>
-  );
+
+  render() {
+    console.log("render");
+    return (
+      <div className="App">
+        <h1>Hello World</h1>
+      </div>
+    );
+  }
 }
 
 export default App;
