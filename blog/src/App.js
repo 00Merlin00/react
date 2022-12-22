@@ -6,14 +6,13 @@ import React, { useState } from "react";
 class App extends React.Component {
   constructor() {
     super();
-    console.log("constructor");
+    this.state = { data: "Mohit" };
   }
 
   render() {
-    console.log("render");
     return (
       <div className="App">
-        <h1>Hello World</h1>
+        <h1>Hello World {this.state.data}</h1>
       </div>
     );
   }
