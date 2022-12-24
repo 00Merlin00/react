@@ -1,18 +1,31 @@
 import "./App.css";
-import User from "./User";
-import Members from "./Members";
 import React, { useState } from "react";
 
 class App extends React.Component {
   constructor() {
     super();
-    this.state = { data: "Mohit" };
+    console.warn("Constructor");
+    this.state = {
+      name: "Mohit",
+    };
   }
 
+  componentDidUpdate() {
+    console.warn("CDU");
+  }
   render() {
+    console.warn("render");
+
     return (
       <div className="App">
-        <h1>Hello World {this.state.data}</h1>
+        <h1>Component Did Mount {this.state.name}</h1>
+        <button
+          onClick={() => {
+            this.setState({ name: "kittu" });
+          }}
+        >
+          Click to Change
+        </button>
       </div>
     );
   }
