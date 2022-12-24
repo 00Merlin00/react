@@ -15,6 +15,7 @@ class App extends React.Component {
   }
   render() {
     console.warn("render");
+    hello;
 
     return (
       <div className="App">
