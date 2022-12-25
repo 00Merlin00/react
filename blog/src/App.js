@@ -9,10 +9,22 @@ class App extends React.Component {
       counter: 0,
     };
   }
+
+  shouldComponentUpdate() {
+    console.warn("shouldComponentUpdate", this.state.counter);
+    return true;
+  }
   render() {
     return (
       <div className="App">
         <h1>Should component Update {this.state.counter}</h1>
+        <button
+          onClick={() => {
+            this.setState({ counter: this.state.counter + 1 });
+          }}
+        >
+          Update Counter
+        </button>
       </div>
     );
   }
