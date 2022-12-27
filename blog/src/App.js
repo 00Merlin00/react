@@ -12,9 +12,14 @@ class App extends React.Component {
 
   shouldComponentUpdate() {
     console.warn("shouldComponentUpdate", this.state.counter);
-    return true;
+    if (this.state.counter < 9) {
+      return true;
+    } else {
+      return false;
+    }
   }
   render() {
+    console.log("render");
     return (
       <div className="App">
         <h1>Should component Update {this.state.counter}</h1>
