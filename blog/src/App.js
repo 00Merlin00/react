@@ -27,7 +27,7 @@ class App extends React.Component {
             this.setState({ counter: this.state.counter + 1 });
           }}
         >
-          Update Counter here
+          Update Counter
         </button>
       </div>
     );
