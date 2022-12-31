@@ -1,27 +1,15 @@
 import "./App.css";
-import React, { useState } from "react";
-import Student from "./Student";
+import React, { useEffect, useState } from "react";
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = { show: true };
-  }
-  render() {
-    return (
-      <div className="App">
-        {this.state.show ? <Student /> : <h1>child component removed</h1>}
-
-        <button
-          onClick={() => {
-            this.setState({ show: !this.state.show });
-          }}
-        >
-          Toggle Child Component
-        </button>
-      </div>
-    );
-  }
+function App() {
+  useEffect(() => {
+    console.log("useEffect");
+  });
+  return (
+    <div className="App">
+      <h1>UseEffect in React</h1>
+    </div>
+  );
 }
 
 export default App;
