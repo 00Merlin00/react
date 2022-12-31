@@ -17,7 +17,7 @@ class App extends React.Component {
             this.setState({ show: !this.state.show });
           }}
         >
-          Toggle Child Component
+          Toggle Child Component here
         </button>
       </div>
     );
