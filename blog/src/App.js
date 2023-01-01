@@ -8,13 +8,12 @@ function App() {
   });
   return (
     <div className="App">
-      <h1>UseEffect in React {count}</h1>
       <button
         onClick={() => {
           setCount(count + 1);
         }}
       >
-        Change
+        Update Count {count}
       </button>
     </div>
   );
