@@ -1,5 +1,6 @@
 import "./App.css";
 import "./Style.css";
+import React from "react";
 import Table from "react-bootstrap/Table";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <h1>List with Bootstrap Table</h1>
-      <Table>
+      <Table style={{ border: "1px solid black" }}>
         <tbody>
           <tr>
             <td>Name</td>
