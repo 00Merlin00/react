@@ -1,6 +1,6 @@
 import "./App.css";
 import "./Style.css";
-import { Table } from "react-bootstrap/Table";
+import Table from "react-bootstrap/Table";
 
 function App() {
   let users = [
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <h1>List with Bootstrap Table</h1>
-      <table>
+      <Table>
         <tbody>
           <tr>
             <td>Name</td>
@@ -27,7 +27,7 @@ function App() {
             </tr>
           ))}
         </tbody>
-      </table>
+      </Table>
     </div>
   );
 }
