@@ -1,7 +1,9 @@
+import React from "react";
 import "./App.css";
 import "./Style.css";
-import React from "react";
-import Table from "react-bootstrap/Table";
+
+import User from "./User";
+// import Table from "react-bootstrap/Table";
 
 function App() {
   let users = [
@@ -13,6 +15,9 @@ function App() {
   return (
     <div className="App">
       <h1>Reuse Component with list</h1>
+      {users.map((data, a) => (
+        <User key={a} item={data} />
+      ))}
     </div>
   );
 }
