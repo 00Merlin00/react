@@ -1,10 +1,11 @@
 import React from "react";
 
 function User(props) {
+  let data = "kittu";
   return (
     <div>
-      <h2>Username : {props.name}</h2>
-      <button>Click Me </button>
+      <h2>Username </h2>
+      <button onClick={() => props.mohit(data)}>Click Me </button>
     </div>
   );
 }

@@ -2,17 +2,26 @@ import React from "react";
 import "./App.css";
 import "./Style.css";
 
-import User from "./User";
 // import Table from "react-bootstrap/Table";
 
-function App() {
-  let data = "Kittu Rawat";
-  return (
-    <div className="App">
-      <h1>Lifting State Up</h1>
-      <User name={data} />
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      count: 1,
+    };
+  }
+  render() {
+    console.warn("check re-rendering");
+    return (
+      <div className="App">
+        <h1>Pure Component in React {this.state.count}</h1>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          click
+        </button>
+      </div>
+    );
+  }
 }
 
 export default App;
