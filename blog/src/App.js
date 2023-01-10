@@ -9,6 +9,7 @@ function App() {
   function handleInput() {
     console.warn("func called");
     inputRef.current.value = "1000";
+    inputRef.current.focus();
   }
   return (
     <div className="App">
