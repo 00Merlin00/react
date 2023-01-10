@@ -1,13 +1,11 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-function User(props) {
-  let data = "kittu";
+function User(props, ref) {
   return (
     <div>
-      <h2>Username </h2>
-      <button onClick={() => props.mohit(data)}>Click Me </button>
+      <input type="text" ref={ref}></input>
     </div>
   );
 }
 
-export default User;
+export default forwardRef(User);
