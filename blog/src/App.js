@@ -1,21 +1,20 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "./Style.css";
-import User from "./User";
 
 // import Table from "react-bootstrap/Table";
 
 function App() {
-  let inputRef = useRef("");
-  function updateInput() {
-    inputRef.current.value = "1000";
-    inputRef.current.style.color = "red";
-  }
+  let [val, setVal] = useState("");
   return (
     <div className="App">
-      <h1>forwardRef in React</h1>
-      <User ref={inputRef} />
-      <button onClick={() => updateInput()}>Update Input Box</button>
+      <h1>Controlled Component</h1>
+      <input
+        type={"text"}
+        value={val}
+        onChange={(e) => setVal(e.target.value)}
+      ></input>
+      <h3>{val}</h3>
     </div>
   );
 }
