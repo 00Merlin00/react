@@ -15,7 +15,6 @@ function App() {
       <h1>Uncontrolled Component</h1>
       <form onSubmit={submitForm}>
         <input type={"text"}></input> <br /> <br />
-        <input type={"text"}></input> <br /> <br />
       </form>
       <button>Submit</button>
     </div>
