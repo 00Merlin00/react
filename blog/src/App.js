@@ -6,15 +6,18 @@ import "./Style.css";
 
 function App() {
   let [val, setVal] = useState("");
+  function submitForm(e) {
+    e.preventDefault();
+  }
+
   return (
     <div className="App">
-      <h1>Controlled Component</h1>
-      <input
-        type={"text"}
-        value={val}
-        onChange={(e) => setVal(e.target.value)}
-      ></input>
-      <h3>{val}</h3>
+      <h1>Uncontrolled Component</h1>
+      <form onSubmit={submitForm}>
+        <input type={"text"}></input> <br /> <br />
+        <input type={"text"}></input> <br /> <br />
+      </form>
+      <button>Submit</button>
     </div>
   );
 }
