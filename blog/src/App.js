@@ -14,6 +14,7 @@ function App() {
         <Link to="./about">About Page</Link>
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </div>
