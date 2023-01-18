@@ -5,7 +5,9 @@ function Nav() {
   return (
     <div>
       <Link to="/">Home Page</Link>
+
       <br />
+      <Link to="./about">About Page</Link>
     </div>
   );
 }
