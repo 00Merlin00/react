@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import "./Style.css";
+import { Link, Routes, Route } from "react-router-dom";
+import User from "./User";
 
 function App() {
   let users = [
@@ -13,9 +15,16 @@ function App() {
   return (
     <div className="App">
       <h1>React Dynamic Routing</h1>
-      {users.map((item) => (
-        <div>{item.name}</div>
+      {users.map((item, k) => (
+        <div key={k}>
+          <Link to={`/user/${item.id}`} state={item}>
+            <h3>{item.name}</h3>
+          </Link>
+        </div>
       ))}
+      <Routes>
+        <Route path="/user/:name" element={<User />} />
+      </Routes>
     </div>
   );
 }
