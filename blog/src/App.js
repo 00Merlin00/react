@@ -8,6 +8,7 @@ function App() {
     { id: 2, name: "megha", email: "megha@test.com" },
     { id: 3, name: "jay", email: "jay@test.com" },
     { id: 4, name: "kris", email: "kris@test.com" },
+    { id: 5, name: "mridul", email: "mridul@test.com" },
   ];
   return (
     <div className="App">
