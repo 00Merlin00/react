@@ -22,7 +22,9 @@ function App() {
           </Link>
         </div>
       ))}
-      <Routes></Routes>
+      <Routes>
+        <Route path="/user/:name" element={<User />} />
+      </Routes>
     </div>
   );
 }
