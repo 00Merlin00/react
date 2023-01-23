@@ -5,7 +5,7 @@ function User(prop) {
   //   const params = useParams();
   const location = useLocation();
   console.log(location.state, "location");
-  //   console.log("id", params);
+  console.log("id", params);
   return (
     <div>
       <h1>User Component</h1>
