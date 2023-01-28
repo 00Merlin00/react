@@ -39,7 +39,7 @@ function App() {
         }}
         name="mobile"
       ></input>
-      <button onClick={saveUser}>Savze New User</button>
+      <button onClick={saveUser}>Save New User</button>
     </div>
   );
 }
