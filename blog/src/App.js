@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import "./App.css";
 import "./Style.css";
-import User from "./Uses";
+import { CommonContext } from "./Components/CommonContext";
+import Main from "./Components/Main";
 
 function App() {
-  let [count, setCount] = useState(0);
+  let [color, setColor] = useState(null);
+  function updateColor() {
+    setColor({ color: "red" });
+  }
   return (
     <div className="App">
-      <User count={count} />
-      <button onClick={() => setCount(Math.floor(Math.random() * 10))}>
-        Update Counter
-      </button>
+      <CommonContext.Provider value={color}>
+        <h1>Context Api</h1>
+      </CommonContext.Provider>
+      <Main />
     </div>
   );
 }
