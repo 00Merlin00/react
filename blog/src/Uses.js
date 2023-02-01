@@ -9,7 +9,7 @@ function User(props) {
   return (
     <div>
       <h1>Current Value : {props.count}</h1>
-      <h1>Previous Value : {preProps}</h1>
+      <h1>evious Value : {preProps}</h1>
     </div>
   );
 }
