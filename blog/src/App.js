@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <CommonContext.Provider value={color}>
-        <h1>Context Api</h1>
+        <h1>Context Appi</h1>
       </CommonContext.Provider>
       <Main />
     </div>
