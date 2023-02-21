@@ -11,7 +11,7 @@ function App() {
   ];
   return (
     <div className="App">
-      <h1>Li Table</h1>
+      <h1>lii Table</h1>
       <Table style={{ border: "1px solid black" }}>
         <tbody>
           <tr>
