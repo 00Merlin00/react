@@ -4,7 +4,7 @@ import { CommonContext } from "./CommonContext";
 function Main() {
   return (
     <CommonContext.Consumer>
-      {({ theme }) => <h1>hcllo page</h1>}
+      {({ theme }) => <h1>hello page</h1>}
     </CommonContext.Consumer>
   );
 }
